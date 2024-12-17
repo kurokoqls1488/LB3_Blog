@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LB3_Blog;
+namespace LB3_Blog.Models;
 
 public partial class User
 {
@@ -13,7 +13,7 @@ public partial class User
 
     public string? Phone { get; set; }
 
-    public TimeOnly? Birthday { get; set; }
+    public DateOnly? Bithday { get; set; }
 
     public virtual ICollection<Post> Posts { get; set; } = new List<Post>();
 }
